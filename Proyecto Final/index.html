@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!----------------------------
+    --------- CABECERA -----------
+    ----------------------------->
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">    
+                </a>
+            </div>
+            <div class="module-navegation lg">
+                <a class="active" href="#">Inicio</a>
+                <a href="pages/news.html">Noticias</a>
+                <a href="#">
+                    <div class="buy">
+                        <button class="button-buy" onclick="shoppingCartModal('miventana',{
+                                                            title: 'Carrito',
+                            width: 400,
+                            height: 40,
+                            },
+                            ['Aceptar',function(){
+                                 alert('Has comprado los juegos muchas gracias');
+                            }],
+                            ['Cancelar',function(){
+                                 alert('Aun no estas satisfecho');
+                            }]);"
+                            ><img src="img/carrito.png" class="img-buy" alt="">
+                            <span id="mostrar">0</span></button>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="module-navegation sm">
+                <nav id="navigation">
+                    <div class="control-menu">
+                        <a href="#navigation" class="open"><span>MENU</span></a>
+                        <a href="#" class="close"><span>CERRAR</span></a>
+        
+                    </div>
+                    <ul class="nav-items">
+                
+                        <li><a href="index.html"> <span>Inicio</span></a></li>
+                        <li><a href="pages/news.html"><span>Noticias</span></a></li>
+                    </ul>
+        
+                </nav>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="img-principal" src="img/nier-replicant.jpg" alt="">
+        </div>
+    </header>
+
+
+    <!----------------------------
+    ---------  SECCIÓN -----------
+    ----------------------------->
+
+    <section>
+        <div class="content">
+            <h1 class="title-section">Juegos populares</h1>
+            <div class="module">
+                <button class="button-module button-1" onclick="producto1()">
+                    <div class="description">
+                        <p>Frostpunk</p>
+                        <p>$15000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module">
+                <button class="button-module button-2" onclick="producto2()">
+                    <div class="description">
+                        <p>GTA</p>
+                        <p>$25000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module">
+                <button class="button-module button-3" onclick="producto3()">
+                    <div class="description">
+                        <p>Village</p>
+                        <p>$59000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module">
+                <button class="button-module button-4" onclick="producto4()">
+                    <div class="description">
+                        <p>Mosnter Hunter</p>
+                        <p>$35000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable">
+                <button class="button-module button-5" onclick="producto5()">
+                    <div class="description">
+                        <p>Battlefield</p>
+                        <p>$45000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable">
+                <button class="button-module button-6" onclick="producto6()">
+                    <div class="description">
+                        <p>Mortal Kombat</p>
+                        <p>$15000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable">
+                <button class="button-module button-7 " onclick="producto7()">
+                     <div class="description">
+                        <p>Strandew Valley</p>
+                        <p>$7000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable">
+                <button class="button-module button-8" onclick="producto8()">
+                     <div class="description">
+                        <p>Satisfactory</p>
+                        <p>$17000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable-2">
+                <button class="button-module button-9" onclick="producto9()">
+                     <div class="description">
+                        <p>Call of Duty</p>
+                        <p>$15000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable-2">
+                <button class="button-module button-10" onclick="producto10()">
+                     <div class="description">
+                        <p>Minecraft</p>
+                        <p>$20000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable-2">
+                <button class="button-module button-11" onclick="producto11()">
+                     <div class="description">
+                        <p>Phasmophobia</p>
+                        <p>$7000</p>
+                    </div>
+                </button>
+            </div>
+            <div class="module disable-2">
+                <button class="button-module button-12" onclick="producto12()">
+                     <div class="description">
+                        <p>Valheim</p>
+                        <p>$8000</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="section-down">
+            <div class="list">
+                <h2 class="title-list">Lista de juegos</h2>
+                <button class="button-list" onclick="producto13()">
+                    <div class="list-module">
+                        <img class="img-list" src="img/image-1-6.jpg" alt="">
+                        <div class="description">
+                            <h3 class="name">Control Ultimate Edition</h3>
+                            <h3 class="price">$30.000</h3>
+                        </div>
+                    </div>
+                </button>
+                <button class="button-list" onclick="producto14()">
+                    <div class="list-module">
+                        <img class="img-list" src="img/450_1000.jpeg" alt="">
+                        <div class="description">
+                            <h3 class="name">Cyberpunk</br></h3>
+                            <h3 class="price">$45.000</h3>
+                        </div>
+                    </div>
+                    
+                </button>
+                <button class="button-list" onclick="producto15()">
+                    <div class="list-module">
+                        <img class="img-list" src="img/header.jpg" alt="">
+                        <div class="description">
+                            <h3 class="name">Slay the Spire</h3>
+                            <h3 class="price">$5.000</h3>
+                        </div>
+                    </div>
+                </button>
+                <button class="button-list" onclick="producto16()">
+                    <div class="list-module">
+                        <img class="img-list" src="img/capsule_616x353.jpg" alt="">
+                        <div class="description">
+                            <h3 class="name">The Witcher 3</h3>
+                            <h3 class="price">$20.000</h3>
+                        </div>
+                    </div>
+                </button>
+                <button class="button-list" onclick="producto16()">
+                    <div class="list-module">
+                        <img class="img-list" src="img/AoE-Social-Header-Blog.png" alt="">
+                        <div class="description">
+                            <h3 class="name">Age of Empire</h3>
+                            <h3 class="price">$15.000</h3>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="sponsors">
+                <a href="https://www.spdigital.cl/"><img src="img/23116807_1429107087144339_3017720316945477440_o.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="module-foot">
+            <h2 class="text-foot"> Derechos reservados &copy SurrealGames</h2>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
