@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!----------------------------
+    --------- CABECERA -----------
+    ----------------------------->
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo news">
+                <a href="#">
+                    <img src="../img/logo.png" alt="">    
+                </a>
+            </div>
+            <div class="module-navegation lg">
+                <a href="../index.html">Inicio</a>
+                <a class="active" href="#">Noticias</a>
+            </div>
+        </div>
+        <div class="module-navegation sm">
+            <div class="module-navegation sm">
+                <nav id="navigation">
+                    <div class="control-menu">
+                        <a href="#navigation" class="open"><span>MENU</span></a>
+                        <a href="#" class="close"><span>CERRAR</span></a>
+        
+                    </div>
+                    <ul class="nav-items">
+                
+                        <li><a href="index.html"> <span>Inicio</span></a></li>
+                        <li><a href="pages/news.html"><span>Noticias</span></a></li>
+                    </ul>
+        
+                </nav>
+            </div>>
+        </div>
+        <div class="banner">
+            <img class="img-principal" src="../img/banner.png" alt="">
+        </div>
+    </header>
+
+    <section>
+        <div class="list-news">
+            <h2 class="title-list">Noticias y proximos lanzamientos</h2>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/newWorld.jpg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">New Word</h3>
+                        <h5 class="name">Fecha Lanzamiento:&nbsp 31 de agosto de 2021</h3>
+                        <p class="section-p">Un MMO fascinante y hermoso de Amazon Games que enfrentará a los jugadores a los peligros de una tierra mística, 
+                            a guerreros de otras épocas y también a otros jugadores. 
+                            New World promete exploración con "belleza, peligro y oportunidad en todo momento</p>
+                    </div>
+            </div>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/lady-dimitrescu-resident-evil-8-1620810203.jpg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">E3 2021: Capcom pone fecha y hora a su evento; habrá avances de Resident Evil</h3>
+                        <p class="section-p">La compañía confirmó algunos de los juegos que estarán en su presentación</p>
+                    </div>
+            </div>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/battlefield.jpg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">RUMOR: Battlefield 2042 es el nombre de la nueva entrega de la saga bélica</h3>
+                        <p class="section-p">Según la filtración, a finales de junio habrá una beta abierta</p>
+                    </div>
+            </div>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/cod-790x444.jpg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">¡La temporada 4 de CoD: Warzone y Black Ops Cold War se revelará esta semana!</h3>
+                        <p class="section-p">La Season 3 y el evento '80s Action Heroes finalizarán el próximo 15 de junio</p>
+                    </div>
+            </div>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/409843a41bcb1ccaa7a6124299395526714aa598cd281e526fcdba0cfe0fb548_product_card_v2_mobile_slider_639.jpg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">Gamedec</h3>
+                        <h5 class="name">Fecha Lanzamiento:&nbsp 16 de septiembre de 2021</h3>
+                        <p class="section-p">Gamedec se convertirá en un intrigante juego de rol cyberpunk. Jugando a este, estarás en la piel de un detective privado 
+                            cuyo trabajo es resolver crímenes dentro de mundos virtuales. ¿Un juego dentro de un juego?</p>
+                    </div>
+            </div>
+            <div class="list-module list-module-news">
+                <img class="img-list" src="../img/dl2.jpeg" alt="">
+                    <div class="description-news">
+                        <h3 class="name">Dying Light 2</h3>
+                        <h5 class="name">Fecha Lanzamiento:&nbsp 7 de diciembre de 2021</h3>
+                        <p class="section-p">Dying Light 2 se anunció originalmente en el E3 2018, ahora finalmente tenemos algo de información sobre cuándo se lanzará por 
+                            completo y una muestra de lo que está por venir.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="wrapper">
+                <form action="">
+                    <h1 class="title">Para más noticias suscribete aquí</h1>
+                    <input type="text" name="nombre" id="nombre" class="name" placeholder="Ingresa tu nombre" required>
+                    <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+                    <button type="button" class="button-submit" onclick='agregarUsuario()'>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="module-foot">
+            <h2 class="text-foot"> Derechos reservados &copy SurrealGames</h2>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
